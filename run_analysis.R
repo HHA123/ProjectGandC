@@ -1,7 +1,8 @@
 run_analysis <- function(){
-        #Dowloads andunzip files
+        #Dowloads and unzip files
         if(!file.exists("./data")){dir.create("./data")}
         fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+        download.file(fileUrl, dest = "./data/dataset.zip",mode ="wb")
         unzip(zipfile="./data/dataset.zip",exdir ="C:/Users/kan01/Documents/Rprogrammering/data/UCI HAR Dataset")
         library(dplyr)
         
