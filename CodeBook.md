@@ -1,29 +1,3 @@
-
-
-The data used in susequent analysis comes from:
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-
-A description of the data can be found at:
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
-
-To create a tidy dataset of the above data the following was done in r v3.1.2
-and the code can be found in run_analysis.R
-
-1)The labels was changed to be consistent and illegal symbols in r was removed. 
-The names was also changed to be unique
-
-2)Only Variables that contained mean and standard deviation were used
-
-3)subject and activity descriptions where added to the data set,
-acitivty descriptions were changed to be literal
-
-4)The X_train and X_test data was merged into one data set with the subject, activitiy descriptions.
-
-5)The merged data was grouped by the subject,activity columns and then summerized with 
-respect to the average of the varibles.
-
-
-
 Here follows a short description of each variable:
 
 This Variable was contain an index number for each subject 1-30
