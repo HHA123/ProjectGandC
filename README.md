@@ -7,19 +7,19 @@ It contains:
 
 2)The script run_analysis.R
 
-To create a tidy dataset the following was done in r v3.1.2 by the scrip run_analysis.R
+Creates a tidy dataset in r v3.1.2, the following steps were taken.
 
-1)The labels was changed to be consistent and illegal symbols in r was removed. 
+*)The labels was changed to be consistent and illegal symbols in r was removed. 
 The names was also changed to be unique
 
-2)Only Variables that contained mean and standard deviation were used
+*)Only variables that contained mean and standard deviation were used
 
-3)subject and activity descriptions where added to the data set,
+*)Subject and activity descriptions where added to the data set,
 acitivty descriptions were changed to be literal
 
-4)The train and test data was merged into one data set with the subject, activitiy descriptions.
+*)The train and test data were merged into one data set with the subject, activitiy descriptions.
 
-5)The merged data was grouped by the subject,activity columns and then summerized with 
+*)The merged data was grouped by the subject,activity columns and then summerized with 
 respect to the average of the varibles.
 
 The data used in the analysis comes from:
